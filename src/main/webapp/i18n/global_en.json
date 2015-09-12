@@ -1,0 +1,14 @@
+{
+	"breadcrumb": {
+		"home": "Home",
+		"account": "Account",
+		"login": "Login",
+		"register": "Register",
+		"success": "Success"
+	},
+	"button": {
+		"login": "Login",
+		"submit": "Submit",
+		"continue": "Continue"
+	}
+}

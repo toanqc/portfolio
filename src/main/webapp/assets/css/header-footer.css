@@ -1,0 +1,137 @@
+.header-container {
+	border-top: 7px solid rgba(73, 187, 204, 1);
+	border-bottom: 0px solid rgba(73, 187, 204, 1);
+}
+
+.header {
+	width: 80%;
+	margin: 5% auto;
+}
+
+.logo {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 0px solid #49bbcc;
+	background-color: #49bbcc;
+}
+
+.logo-content {
+	border-radius: 50%;
+	padding-top: 1px;
+	text-align: center;
+}
+
+.my-title {
+	padding: 10px 0 0 20px;
+	font-family: Tahoma;
+	float: left;
+}
+
+.menu-container {
+	padding-top: 30px;
+	float: right;
+}
+
+.menu {
+	display: inline-block;
+	padding-left: 25px;
+	font-size: 16px
+}
+
+.footer-container {
+	
+}
+
+.contact-row {
+	margin-top: 10px;
+}
+
+.footer {
+	width: 80%;
+	margin: 0 auto;
+	border-top: 1px solid #dfdfdf;
+}
+
+.footer .left {
+	float: left;
+	width: 33%;
+}
+
+.footer .middle {
+	float: left;
+}
+
+.footer .right {
+	float: right;
+}
+
+.footer .contact-row i {
+	font-size: 40px;
+	vertical-align: middle;
+}
+
+.footer-text {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.footer-text.phone {
+	font-size: 20px;
+}
+
+.social-row {
+	text-align: center;
+}
+
+.follow {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.social-row ul li {
+	display: inline-block;
+	margin: 0 10px;
+	zoom: 1;
+}
+
+.social-row ul li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-color: #49bbcc;
+	padding: 8px 10px;
+	line-height: 0.8;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.social-row ul li i {
+	font-size: 25px; vertical-align : middle;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.copyright-container {
+	background-color: #49bbcc;
+	color: #ffffff;
+	height: 50px;
+	padding-top: 15px;
+}
+
+.copyright-row {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.my-site {
+	float: left;
+}
+
+.copyright-text {
+	float: right;
+}
