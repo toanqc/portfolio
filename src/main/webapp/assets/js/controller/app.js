@@ -1,7 +1,7 @@
 'use strict';
 
-var app = angular.module('portfolio', [ 'ui.router',
-		'ngCookies', 'pascalprecht.translate', 'ngMessages' ]);
+var app = angular.module('portfolio', [ 'ui.router', 'ngCookies',
+		'pascalprecht.translate', 'ngMessages' ]);
 
 app.config(function($translateProvider, $translatePartialLoaderProvider) {
 
@@ -30,23 +30,18 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state('/', {
 		url : '/',
 		templateUrl : 'views/home.html'
-	}).state('accounts-register', {
-		url : '/accounts/register',
-		templateUrl : 'views/account-register.html',
-		controller : 'accountCtrl'
-	}).state('accounts-login', {
-		url : '/accounts/login',
-		templateUrl : 'views/login.html',
-		controller : 'loginCtrl'
-	}).state('accounts-home', {
-		url : '/accounts/home',
-		templateUrl : 'views/account-home.html',
-		access : {
-			requiredLogin : true
-		}
-	}).state('accounts-success', {
-		url : '/accounts/success',
-		templateUrl : 'views/account-success.html'
+	}).state('who-i-am', {
+		url : '/who-i-am',
+		templateUrl : 'views/who-i-am.html',
+		controller : 'mainCtrl'
+	}).state('what-i-do', {
+		url : '/what-i-do',
+		templateUrl : 'views/what-i-do.html',
+		controller : 'mainCtrl'
+	}).state('contact-me', {
+		url : '/contact-me',
+		templateUrl : 'views/contact-me.html',
+		controller : 'mainCtrl'
 	}).state('404', {
 		url : '/404',
 		templateUrl : 'views/errors/404.html'
