@@ -4,8 +4,8 @@
 }
 
 .header {
-	width: 80%;
-	margin: 5% auto;
+	width: 980px;
+	margin: 50px auto;
 }
 
 .logo {
@@ -39,27 +39,29 @@
 	font-size: 16px
 }
 
-.footer-container {
-	
-}
-
 .contact-row {
 	margin-top: 10px;
 }
 
+.footer-container {
+	
+}
+
 .footer {
-	width: 80%;
+	width: 980px;
 	margin: 0 auto;
 	border-top: 1px solid #dfdfdf;
 }
 
 .footer .left {
 	float: left;
-	width: 33%;
+	width: 30%;
 }
 
 .footer .middle {
 	float: left;
+	text-align: center;
+	width: 42%;
 }
 
 .footer .right {
@@ -87,8 +89,7 @@
 .follow {
 	font-size: 16px;
 	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 5px;
+	margin: 10px 0 5px 50px;
 }
 
 .social-row ul li {
@@ -102,8 +103,7 @@
 	height: 40px;
 	display: block;
 	background-color: #49bbcc;
-	padding: 8px 10px;
-	line-height: 0.8;
+	padding: 8px 8px;
 	-webkit-transition: 0.5s ease;
 	-moz-transition: 0.5s ease;
 	-o-transition: 0.5s ease;
@@ -111,9 +111,8 @@
 }
 
 .social-row ul li i {
-	font-size: 25px; vertical-align : middle;
+	font-size: 25px;
 	color: #fff;
-	vertical-align: middle;
 }
 
 .copyright-container {
@@ -121,10 +120,11 @@
 	color: #ffffff;
 	height: 50px;
 	padding-top: 15px;
+	align-self: flex-end;
 }
 
 .copyright-row {
-	width: 70%;
+	width: 980px;
 	margin: 0 auto;
 }
 

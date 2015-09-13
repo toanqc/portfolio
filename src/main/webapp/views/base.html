@@ -5,8 +5,7 @@
 <title>Toan Quach's Portfolio</title>
 
 <!-- font library -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans'
-	rel='stylesheet' type='text/css'>
+
 
 <!-- css library -->
 <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
@@ -14,11 +13,14 @@
 	href="assets/css/lib/bootstrap-3.3.5/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css"
 	href="assets/css/lib/font-awesome-4.4.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="assets/css/lib/flexslider.css" />
 
 <!-- css application -->
 <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 <link rel="stylesheet" type="text/css"
 	href="assets/css/header-footer.css" />
+
 
 <!-- javascript library -->
 <script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
@@ -37,16 +39,20 @@
 	src="assets/js/lib/angular-translate-loader-partial.min.js"></script>
 <script type="text/javascript"
 	src="assets/js/lib/angular-messages.min.js"></script>
+<script type="text/javascript"
+	src="assets/js/lib/jquery.flexslider-min.js"></script>
 
 <!-- javascript application -->
 <script type="text/javascript" src="assets/js/controller/app.js"></script>
-<script type="text/javascript" src="assets/js/controller/home.js"></script>
+<script type="text/javascript" src="assets/js/controller/main.js"></script>
 
 </head>
 <body ng-app="portfolio">
 	<div class="page-container">
 		<div ng-include="'views/partials/header.html'"></div>
+		<div class="clearfix"></div>
 		<div ui-view></div>
+		<div class="clearfix"></div>
 		<div ng-include="'views/partials/footer.html'"></div>
 	</div>
 </body>
