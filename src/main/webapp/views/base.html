@@ -41,6 +41,8 @@
 	src="assets/js/lib/angular-messages.min.js"></script>
 <script type="text/javascript"
 	src="assets/js/lib/jquery.flexslider-min.js"></script>
+<script type="text/javascript"
+	src="assets/js/lib/angular-animate.min.js"></script>
 
 <!-- javascript application -->
 <script type="text/javascript" src="assets/js/controller/app.js"></script>
@@ -51,7 +53,9 @@
 	<div class="page-container">
 		<div ng-include="'views/partials/header.html'"></div>
 		<div class="clearfix"></div>
-		<div ui-view></div>
+		<div class="main-container">
+			<div ui-view></div>
+		</div>
 		<div class="clearfix"></div>
 		<div ng-include="'views/partials/footer.html'"></div>
 	</div>

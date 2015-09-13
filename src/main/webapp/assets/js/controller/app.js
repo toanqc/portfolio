@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('portfolio', [ 'ui.router', 'ngCookies',
+var app = angular.module('portfolio', [ 'ui.router', 'ngAnimate', 'ngCookies',
 		'pascalprecht.translate', 'ngMessages' ]);
 
 app.config(function($translateProvider, $translatePartialLoaderProvider) {

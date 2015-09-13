@@ -13,12 +13,15 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: #49bbcc;
 }
 
-a:hover {
-	
+a:link, a:hover, a:focus, a:visited  {
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: #848484;
 }
 
 h1 {
@@ -230,4 +233,47 @@ button {
 
 .contact-form .button {
 	text-align: right;
+}
+
+/* PAGE TRANSITION */
+[ui-view].ng-enter, [ui-view].ng-leave {
+	position: absolute;
+	transition: 1s all ease;
+	-moz-transition: 1s all ease;
+	-webkit-transition: 1s all ease;
+}
+
+[ui-view].ng-enter {
+	-webkit-animation: slideInRight 1s both ease;
+	-moz-animation: slideInRight 1s both ease;
+	animation: slideInRight 1s both ease;
+}
+
+[ui-view].ng-leave {
+	-webkit-animation: slideOutLeft 1s both ease;
+	-moz-animation: slideOutLeft 1s both ease;
+	animation: slideOutLeft 1s both ease;
+}
+
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-200%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-200%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-200%); }
+}
+
+@keyframes slideInRight {
+	from 	{ transform:translateX(200%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(200%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(200%); }
+	to 		{ -webkit-transform: translateX(0); }
 }
