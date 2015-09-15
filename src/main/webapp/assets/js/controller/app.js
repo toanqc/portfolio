@@ -34,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url : '/who-i-am',
 		templateUrl : 'views/who-i-am.html',
 		controller : 'mainCtrl'
-	}).state('what-i-do', {
+	}).state('what-i-achieve', {
 		url : '/what-i-achieve',
 		templateUrl : 'views/what-i-achieve.html',
 		controller : 'mainCtrl'
