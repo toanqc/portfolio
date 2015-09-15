@@ -35,12 +35,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl : 'views/who-i-am.html',
 		controller : 'mainCtrl'
 	}).state('what-i-do', {
-		url : '/what-i-do',
-		templateUrl : 'views/what-i-do.html',
+		url : '/what-i-achieve',
+		templateUrl : 'views/what-i-achieve.html',
 		controller : 'mainCtrl'
 	}).state('contact-me', {
 		url : '/contact-me',
 		templateUrl : 'views/contact-me.html',
+		controller : 'mainCtrl'
+	}).state('my-hobbies', {
+		url : '/my-hobbies',
+		templateUrl : 'views/my-hobbies.html',
 		controller : 'mainCtrl'
 	}).state('404', {
 		url : '/404',

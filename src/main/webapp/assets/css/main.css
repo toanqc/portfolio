@@ -16,7 +16,7 @@ a {
 	color: #49bbcc;
 }
 
-a:link, a:hover, a:focus, a:visited  {
+a:link, a:hover, a:focus, a:visited {
 	text-decoration: none;
 }
 
@@ -53,11 +53,11 @@ h1 {
 .main-container {
 	width: 980px;
 	margin: 0 auto;
-	height: 632px;
+	height: 652px;
 }
 
 .title {
-	font-size: 160px;
+	font-size: 140px;
 	font-weight: bold;
 }
 
@@ -71,7 +71,7 @@ h1 {
 /* WHO I AM PAGE */
 .left-content {
 	float: left;
-	width: 43%;
+	width: 48%;
 	text-align: justify;
 }
 
@@ -82,26 +82,28 @@ h1 {
 .right-content {
 	float: right;
 	text-align: justify;
-	width: 43%;
+	width: 48%;
 }
 
 .flexslider {
-	width: 690px;
+	width: 100%;
 	border: none;
-	margin: 0px;
+}
+
+.flexslider .slides img {
+	border-radius: 20px;
+	height: 300px;
 }
 
 .flex-control-nav {
-	width: 700px;
-	bottom: 30px;
-	text-align: center;
+	bottom: 10px;
 	z-index: 1000;
 }
 
 .flex-control-paging li a {
 	font-size: 0px;
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	display: block;
 	background: #fff;
 	cursor: pointer;
@@ -118,15 +120,14 @@ h1 {
 	cursor: default;
 }
 
-/* WHAT I DO PAGE */
 .profile-picture {
 	margin: 0 auto;
 	width: 50%;
 }
 
 .profile-picture img {
-	width: 230px;
-	height: 230px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 
@@ -140,12 +141,53 @@ h1 {
 
 .resume {
 	text-align: center;
-	margin: 30px 0 0 0;
+	margin: 20px 0 0 0;
 	font-size: 30px;
 }
 
-.resume a:hover {
+.resume-what-i-achieve {
+	float: right;
+	font-size: 20px;
+	margin: 20px 12% 0 0;
+}
+
+.resume a:hover, .resume-what-i-achieve a:hover {
 	text-decoration: none;
+}
+
+/* WHAT I DO PAGE */
+.achivement-container {
+	width: 67%;
+	margin: 0;
+	text-align: justify;
+	float: left;
+}
+
+.achivement-list {
+	margin-top: -20px;
+}
+
+.achivement-list li {
+	margin-left: -15px;
+	font-size: 16px;
+	color: #49bbcc;
+}
+
+.achivement-item li {
+	color: #474747;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.tech-container {
+	position: relative;
+	text-align: right;
+	margin: 6% 12% 0 0;
+}
+
+.tech-container img {
+	height: 20%;
+	width: 20%;
 }
 
 /* CONTACT PAGE */
