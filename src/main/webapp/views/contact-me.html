@@ -9,7 +9,9 @@
 				<hr />
 				<div>5002 232nd St SW</div>
 				<div>Mountlake Terrace, WA 98043</div>
-				<div class="contact-way">Cell: 515-346-4204</div>
+				<div class="contact-way">
+					Cell: <a class="white" href="tel:+15153464204">(515) 346-4204</a>
+				</div>
 				<div>
 					Email: <a class="white" href="mailto:toanqc@gmail.com">toanqc@gmail.com</a>
 				</div>
@@ -17,23 +19,63 @@
 		</div>
 		<div class="contact-form-container">
 			<div class="send-message">Send me a message</div>
-			<form>
+			<form name="contactForm" novalidate ng-submit="sendEmail(contact)">
 				<div class="contact-form">
 					<div>
-						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="text" ng-model="contact.name" name="name" id="name"
+							placeholder="Name" required minlength="3" maxlength="32" />
+					</div>
+					<div class="error" ng-if="contactForm.name.$touched || submitted"
+						ng-messages="contactForm.name.$error">
+						<span ng-message="required">{{"validation.required" |
+							translate:'{fieldName: "Name"}'}}</span> <span
+							ng-message="minlength, maxlength">{{"validation.length" |
+							translate:'{fieldName: "Name", minlength: "5", maxlength:
+							"32"}'}}</span>
 					</div>
 					<div>
-						<input type="email" name="email" id="email" placeholder="Email" />
+						<input type="email" ng-model="contact.email" name="email"
+							id="email" placeholder="Email" required minlength="5"
+							maxlength="32" />
+					</div>
+					<div class="error" ng-if="contactForm.email.$touched || submitted"
+						ng-messages="contactForm.email.$error">
+						<span ng-message="required">{{"validation.required" |
+							translate:'{fieldName: "Email"}'}}</span> <span
+							ng-message="minlength, maxlength">{{"validation.length" |
+							translate:'{fieldName: "Email", minlength: "5", maxlength:
+							"32"}'}}</span> <span ng-message="email">{{"validation.format" |
+							translate:'{fieldName: "Email"}'}}</span>
 					</div>
 					<div>
-						<input type="text" name="subject" id="subject"
-							placeholder="Subject" />
+						<input type="text" ng-model="contact.subject" name="subject"
+							id="subject" placeholder="Subject" required minlength="3"
+							maxlength="32" />
+					</div>
+					<div class="error"
+						ng-if="contactForm.subject.$touched || submitted"
+						ng-messages="contactForm.subject.$error">
+						<span ng-message="required">{{"validation.required" |
+							translate:'{fieldName: "Subject"}'}}</span> <span
+							ng-message="minlength, maxlength">{{"validation.length" |
+							translate:'{fieldName: "Subject", minlength: "3", maxlength:
+							"32"}'}}</span>
 					</div>
 					<div>
-						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<textarea name="message" ng-model="contact.message" id="message"
+							placeholder="Message" required minlength="3" maxlength="1024"></textarea>
+					</div>
+					<div class="error"
+						ng-if="contactForm.message.$touched || submitted"
+						ng-messages="contactForm.message.$error">
+						<span ng-message="required">{{"validation.required" |
+							translate:'{fieldName: "Message"}'}}</span> <span
+							ng-message="minlength, maxlength">{{"validation.length" |
+							translate:'{fieldName: "Message", minlength: "3", maxlength:
+							"1024"}'}}</span>
 					</div>
 					<div class="button">
-						<button id="send">Send</button>
+						<button id="send" ng-click="submitted=true" ng-disabled="sendButonDisabled">Send</button>
 					</div>
 				</div>
 			</form>

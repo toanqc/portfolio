@@ -6,6 +6,7 @@ $(document).ready(
 						animation : "fade",
 						controlNav : true,
 						directionNav : false,
+						slideshowSpeed : 2500,
 						start : function(slider) {
 
 							if ($("body").css('background-image') == 'none') {
@@ -32,27 +33,4 @@ $(document).ready(
 							$(this).stop().fadeTo(300, 1);
 						}
 					});
-
-			// Using default configuration
-			$(".caruofredsel-featured").carouFredSel({
-				infinite : false,
-				auto : false,
-				width : "100%",
-				prev : {
-					button : ".navigate-featured .prev",
-					key : "left"
-				},
-				next : {
-					button : ".navigate-featured .next",
-					key : "right"
-				},
-				swipe : {
-					onTouch : true,
-					onMouse : false
-				},
-				onCreate : function(data) {
-					$(this).css("height", "auto");
-				}
-			})
-
 		});

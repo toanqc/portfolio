@@ -66,6 +66,11 @@ h1 {
 	font-weight: bold;
 }
 
+.error {
+	color: red;
+	font-weight: bold;
+}
+
 /* HOME PAGE */
 
 /* WHO I AM PAGE */
@@ -88,6 +93,7 @@ h1 {
 .flexslider {
 	width: 100%;
 	border: none;
+	margin: 50% 0 0 0;
 }
 
 .flexslider .slides img {
@@ -148,7 +154,7 @@ h1 {
 .resume-what-i-achieve {
 	float: right;
 	font-size: 20px;
-	margin: 20px 12% 0 0;
+	margin: 75px 12% 0 0;
 }
 
 .resume a:hover, .resume-what-i-achieve a:hover {
@@ -228,7 +234,7 @@ h1 {
 input[type='text'], input[type='email'], textarea {
 	border: 1px solid rgba(156, 156, 156, 0.55);
 	border-radius: 5px;
-	padding: 7px;
+	padding: 6px;
 	width: 100%;
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
@@ -275,6 +281,13 @@ button {
 
 .contact-form .button {
 	text-align: right;
+}
+
+/* MY HOBBIES */
+.hobbies-container {
+	margin: 0;
+	text-align: justify;
+	float: left;
 }
 
 /* PAGE TRANSITION */

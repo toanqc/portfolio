@@ -14,6 +14,7 @@ app.config(function($translateProvider, $translatePartialLoaderProvider) {
 	$translateProvider.useLocalStorage();
 	$translatePartialLoaderProvider.addPart('global');
 	$translatePartialLoaderProvider.addPart('header-footer');
+	$translatePartialLoaderProvider.addPart('validation');
 
 });
 

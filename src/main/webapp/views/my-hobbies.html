@@ -1,7 +1,42 @@
 <div class="main-container" ng-controller="mainCtrl">
 	<div class="left-content">
 		<div class="title mint">I love</div>
-		<div class="description black">Diving, traveling</div>
+		<div class="hobbies-container">
+			<ul type="square" class="achivement-list">
+				<li>Scuba Diving
+					<ul type="disc" class="achivement-item">
+						<li>Dive sites I dived: Sipadan - Malaysia, Koh Rong -
+							Cambodia, Nha Trang - Vietnam, Phu Quoc - Vietnam</li>
+						<li>Dive sites I'm planing to go: Bahamas - US, Maldives, Similan
+							- Thailand, Palawan - Philippines.</li>
+					</ul>
+				</li>
+				<li>Traveling
+					<ul type="disc" class="achivement-item">
+						<li>Countries I've been: Vietnam, United States, Cambodia,
+							Singapore, Thailand, Indonesia.</li>
+						<li>Countries I'm planing to go: Europe, Japan, Korea,
+							Phillippines, Maldives.</li>
+					</ul>
+				</li>
+				<li>Photography
+					<ul type="disc" class="achivement-item">
+						<li>My photos on flickr: <a target="_blank"
+							href="http://www.flickr.com/photos/toanquach">www.flickr.com/photos/toanquach</a></li>
+						<li>My photos on 500px: <a target="_blank"
+							href="http://www.500px.com/toanquach">www.500px.com/toanquach</a></li>
+					</ul>
+				</li>
+				<li>Sports:
+					<ul type="disc" class="achivement-item">
+						<li>Soccer, badminton.</li>
+						<li>Sky diving, bungee.</li>
+						<li>Water sports: scuba diving, free diving, jet-ski,
+							flying-fish.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div class="right-content">
 		<div class="flexslider">
@@ -31,4 +66,13 @@
 			</ul>
 		</div>
 	</div>
+	<div class="clearfix"></div>
+	<div class="resume mint">
+		<a href="assets/up/resume.pdf" target="_blank" rel="20150913">#LATEST
+			RESUME</a>
+	</div>
 </div>
+
+<script type="text/javascript">
+	$.getScript("assets/js/portfolio.js");
+</script>
