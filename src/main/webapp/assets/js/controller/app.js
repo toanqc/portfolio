@@ -30,26 +30,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider.state('/', {
 		url : '/',
-		templateUrl : 'views/home.html'
+		templateUrl : 'home.html'
 	}).state('who-i-am', {
 		url : '/who-i-am',
-		templateUrl : 'views/who-i-am.html',
+		templateUrl : 'who-i-am.html',
 		controller : 'mainCtrl'
 	}).state('what-i-achieve', {
 		url : '/what-i-achieve',
-		templateUrl : 'views/what-i-achieve.html',
+		templateUrl : 'what-i-achieve.html',
 		controller : 'mainCtrl'
 	}).state('contact-me', {
 		url : '/contact-me',
-		templateUrl : 'views/contact-me.html',
+		templateUrl : 'contact-me.html',
 		controller : 'mainCtrl'
 	}).state('my-hobbies', {
 		url : '/my-hobbies',
-		templateUrl : 'views/my-hobbies.html',
+		templateUrl : 'my-hobbies.html',
 		controller : 'mainCtrl'
 	}).state('404', {
 		url : '/404',
-		templateUrl : 'views/errors/404.html'
+		templateUrl : 'errors/404.html'
 	});
 });
 
