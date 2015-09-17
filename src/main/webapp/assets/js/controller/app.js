@@ -47,6 +47,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url : '/my-hobbies',
 		templateUrl : 'my-hobbies.html',
 		controller : 'mainCtrl'
+	}).state('email-success', {
+		url : '/email-success',
+		templateUrl : 'email-success.html',
+		controller : 'mainCtrl'
 	}).state('404', {
 		url : '/404',
 		templateUrl : 'errors/404.html'
