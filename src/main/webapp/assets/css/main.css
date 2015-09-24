@@ -72,6 +72,38 @@ h1 {
 }
 
 /* HOME PAGE */
+.projects {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.project-list {
+	margin-top: 10px;
+}
+
+.project-list div {
+	margin-top: 5px;
+}
+
+.project-item {
+	float: left;
+}
+
+.project-item img {
+	border-radius: 30%;
+}
+
+.project-description {
+	margin: 5px 0 0 50px;
+	float: left;
+	width: 83%;
+	text-align: justify;
+}
+
+.intro {
+	font-size: 25px;
+	font-weight: bold;
+}
 
 /* WHO I AM PAGE */
 .left-content {
