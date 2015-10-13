@@ -30,7 +30,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider.state('/', {
 		url : '/',
-		templateUrl : 'home.html'
+		templateUrl : 'who-i-am.html'
 	}).state('who-i-am', {
 		url : '/who-i-am',
 		templateUrl : 'who-i-am.html',
@@ -43,9 +43,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url : '/contact-me',
 		templateUrl : 'contact-me.html',
 		controller : 'mainCtrl'
-	}).state('my-hobbies', {
-		url : '/my-hobbies',
-		templateUrl : 'my-hobbies.html',
+	}).state('what-i-love', {
+		url : '/what-i-love',
+		templateUrl : 'what-i-love.html',
 		controller : 'mainCtrl'
 	}).state('email-success', {
 		url : '/email-success',

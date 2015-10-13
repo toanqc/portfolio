@@ -50,14 +50,26 @@ h1 {
 	color: #49bbcc;
 }
 
-.main-container {
-	width: 980px;
-	margin: 0 auto;
-	height: 652px;
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.main-container {
+		width: 930px;
+		margin: 0 auto;
+		height: 600px;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+	.main-container {
+		width: 980px;
+		margin: 0 auto;
+		height: 600px;
+	}
 }
 
 .title {
-	font-size: 140px;
+	font-size: 100px;
 	font-weight: bold;
 }
 
@@ -66,42 +78,17 @@ h1 {
 	font-weight: bold;
 }
 
-.error {
-	color: red;
+.intro {
+	font-size: 36px;
 	font-weight: bold;
 }
 
-/* HOME PAGE */
-.projects {
-	margin-top: 10px;
-	font-size: 20px;
-}
-
-.project-list {
+.gap {
 	margin-top: 10px;
 }
 
-.project-list div {
-	margin-top: 5px;
-}
-
-.project-item {
-	float: left;
-}
-
-.project-item img {
-	border-radius: 30%;
-}
-
-.project-description {
-	margin: 5px 0 0 50px;
-	float: left;
-	width: 83%;
-	text-align: justify;
-}
-
-.intro {
-	font-size: 25px;
+.error {
+	color: red;
 	font-weight: bold;
 }
 
@@ -125,7 +112,7 @@ h1 {
 .flexslider {
 	width: 100%;
 	border: none;
-	margin: 50% 0 0 0;
+	margin: 37% 0 0 0;
 }
 
 .flexslider .slides img {
@@ -164,8 +151,8 @@ h1 {
 }
 
 .profile-picture img {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 }
 
@@ -179,14 +166,8 @@ h1 {
 
 .resume {
 	text-align: center;
-	margin: 20px 0 0 0;
+	margin: 15px 0 0 0;
 	font-size: 30px;
-}
-
-.resume-what-i-achieve {
-	float: right;
-	font-size: 20px;
-	margin: 75px 12% 0 0;
 }
 
 .resume a:hover, .resume-what-i-achieve a:hover {
@@ -195,7 +176,7 @@ h1 {
 
 /* WHAT I DO PAGE */
 .achivement-container {
-	width: 67%;
+	width: 75%;
 	margin: 0;
 	text-align: justify;
 	float: left;
@@ -220,7 +201,7 @@ h1 {
 .tech-container {
 	position: relative;
 	text-align: right;
-	margin: 6% 12% 0 0;
+	margin: 3% 0 0 0;
 }
 
 .tech-container img {
