@@ -83,8 +83,38 @@ h1 {
 	font-weight: bold;
 }
 
+.intro {
+	font-size: 36px;
+	font-weight: bold;
+}
+
 .gap {
 	margin-top: 10px;
+}
+
+.top-content {
+	width: 100%;
+}
+
+.top-left {
+	width: 30%;
+	float: left;
+}
+
+.top-middle {
+	width: 15%;
+	float: left;
+}
+
+.top-right {
+	width: 45%;
+	float: right;
+	margin-top: 4.5%;
+}
+
+.sub {
+	font-size: 22px;
+	font-style: italic;
 }
 
 .error {
@@ -146,13 +176,12 @@ h1 {
 }
 
 .profile-picture {
-	margin: 0 auto;
-	width: 50%;
+	margin: 7px 0 0 30px;
 }
 
 .profile-picture img {
-	width: 150px;
-	height: 150px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 }
 
