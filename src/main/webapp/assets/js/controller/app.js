@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('portfolio', [ 'ui.router', 'ngAnimate', 'ngCookies',
+var app = angular.module('portfolio', [ 'ui.router', 'ngCookies',
 		'pascalprecht.translate', 'ngMessages' ]);
 
 app.config(function($translateProvider, $translatePartialLoaderProvider) {
@@ -59,7 +59,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 app.run(function($cookies, $rootScope, $state) {
 
-	$rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
+	$rootScope.$on('$stateChangeStart', function(event, toState) {
 		var isAuthenticationRequired = toState.access
 				&& toState.access.requiredLogin;
 
